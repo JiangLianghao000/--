@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="442.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jianglianghao.notes.view.ManagerSignViewController">
+    <children>
+        <Label layoutX="121.0" layoutY="96.0" text="用户名" />
+        <Label layoutX="121.0" layoutY="189.0" text="账号" />
+        <Label layoutX="121.0" layoutY="269.0" text="密码" />
+        <TextField fx:id="userNameSigned" layoutX="215.0" layoutY="88.0" prefHeight="48.0" prefWidth="475.0" />
+        <TextField fx:id="userAccountSigned" layoutX="215.0" layoutY="181.0" prefHeight="48.0" prefWidth="475.0" />
+        <TextField fx:id="userPasswordSigned" layoutX="215.0" layoutY="261.0" prefHeight="48.0" prefWidth="475.0" />
+        <Button fx:id="saveAccountButtonToDB" layoutX="114.0" layoutY="333.0" mnemonicParsing="false" onMouseClicked="#signAccount" text="注册" />
+        <Button fx:id="backToLoginButton" layoutX="626.0" layoutY="333.0" mnemonicParsing="false" onMouseClicked="#backToLogin" text="返回" />
+    </children>
+</AnchorPane>

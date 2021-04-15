@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="133.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jianglianghao.notes.view.modifyViewController">
+   <children>
+      <Label fx:id="MSGLabel" layoutX="20.0" layoutY="14.0" text="label" />
+      <Label layoutX="8.0" layoutY="49.0" text="重复一遍：" />
+      <TextField fx:id="newMSG" layoutX="102.0" layoutY="6.0" prefHeight="26.0" prefWidth="191.0" promptText="输入" />
+      <TextField fx:id="newMSGAgain" layoutX="102.0" layoutY="49.0" prefHeight="22.0" prefWidth="191.0" promptText="重复一遍" />
+      <Button fx:id="modifyButton" layoutX="173.0" layoutY="95.0" mnemonicParsing="false" onMouseClicked="#modifyButton" prefHeight="32.0" prefWidth="120.0" text="修改" textFill="#bf2c2c" />
+   </children>
+</AnchorPane>

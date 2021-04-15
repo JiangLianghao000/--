@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="447.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jianglianghao.notes.view.ForumViewController">
+   <children>
+      <ListView fx:id="chatList" layoutX="54.0" layoutY="80.0" prefHeight="288.0" prefWidth="493.0" />
+      <Label layoutX="121.0" layoutY="14.0" prefHeight="55.0" prefWidth="391.0" text="         本系统专属论坛" textFill="#32a873">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="comment" layoutX="100.0" layoutY="376.0" prefHeight="28.0" prefWidth="447.0" promptText="输入评价" />
+      <Button fx:id="deliver" layoutX="22.0" layoutY="376.0" mnemonicParsing="false" onMouseClicked="#deliver" prefHeight="32.0" prefWidth="60.0" text="发表" />
+   </children>
+</AnchorPane>

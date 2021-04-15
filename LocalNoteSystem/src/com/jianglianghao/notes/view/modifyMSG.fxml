@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="193.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jianglianghao.notes.view.modifyMSGViewController">
+   <children>
+      <Label fx:id="modifyMSG" layoutX="15.0" layoutY="22.0" prefHeight="52.0" prefWidth="155.0" text="Label" />
+      <TextField fx:id="modifyName" layoutX="93.0" layoutY="22.0" prefHeight="43.0" prefWidth="179.0" />
+      <Button fx:id="modify" layoutX="170.0" layoutY="137.0" mnemonicParsing="false" onMouseClicked="#modify" prefHeight="30.0" prefWidth="100.0" text="修改" />
+      <RadioButton fx:id="choicePublic" layoutX="15.0" layoutY="97.0" mnemonicParsing="false" onMouseClicked="#choicePublic" prefHeight="32.0" prefWidth="100.0" text="公开">
+         <toggleGroup>
+            <ToggleGroup fx:id="public_private" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="choicePrivate" layoutX="170.0" layoutY="97.0" mnemonicParsing="false" onMouseClicked="#choicePrivate" prefHeight="24.0" prefWidth="100.0" text="私有" toggleGroup="$public_private" />
+   </children>
+</AnchorPane>

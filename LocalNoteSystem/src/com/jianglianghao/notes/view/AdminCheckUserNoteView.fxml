@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="730.0" prefWidth="1240.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jianglianghao.notes.view.AdminCheckUserNoteViewController">
+   <children>
+      <ListView fx:id="wareHouse" layoutX="21.0" layoutY="160.0" prefHeight="212.0" prefWidth="118.0" />
+      <ListView fx:id="group" layoutX="21.0" layoutY="456.0" prefHeight="260.0" prefWidth="118.0" />
+      <ListView fx:id="notes" layoutX="147.0" layoutY="284.0" prefHeight="238.0" prefWidth="118.0" />
+      <Button fx:id="showWareHouse" layoutX="21.0" layoutY="93.0" mnemonicParsing="false" onMouseClicked="#showWareHouse" prefHeight="48.0" prefWidth="118.0" text="查看仓库" />
+      <Button fx:id="showGroup" layoutX="21.0" layoutY="395.0" mnemonicParsing="false" onMouseClicked="#showGroup" prefHeight="48.0" prefWidth="118.0" text="查看分组" />
+      <Button fx:id="showNote" layoutX="147.0" layoutY="226.0" mnemonicParsing="false" onMouseClicked="#showNote" prefHeight="48.0" prefWidth="118.0" text="查看笔记" />
+      <Label layoutX="39.0" layoutY="8.0" prefHeight="35.0" prefWidth="509.0" />
+      <Label fx:id="name" layoutX="21.0" layoutY="7.0" prefHeight="58.0" prefWidth="688.0" text="Label" textFill="#dac44a">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Label>
+      <HTMLEditor fx:id="noteContent" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="276.0" layoutY="65.0" prefHeight="539.0" prefWidth="958.0" />
+      <Button fx:id="delete" layoutX="1050.0" layoutY="628.0" mnemonicParsing="false" onMouseClicked="#delete" prefHeight="94.0" prefWidth="176.0" text="删除" textFill="#832525">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Button>
+      <Separator layoutX="-1.0" layoutY="63.0" prefHeight="4.0" prefWidth="1240.0" />
+      <Separator layoutX="276.0" layoutY="614.0" prefHeight="4.0" prefWidth="965.0" />
+      <Separator layoutX="273.0" layoutY="614.0" orientation="VERTICAL" prefHeight="110.0" prefWidth="3.0" />
+      <Label layoutX="302.0" layoutY="626.0" prefHeight="86.0" prefWidth="736.0" text="若文章出现违规内容，可以进行强制删除" textFill="#2130ff">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <FlowPane />
+   </children>
+</AnchorPane>

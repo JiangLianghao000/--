@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jianglianghao.notes.view.UserWriteNoteViewController">
+   <children>
+      <HTMLEditor fx:id="noteText" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="1.0" layoutY="4.0" prefHeight="358.0" prefWidth="1000.0" />
+      <Button fx:id="editFinishButton" layoutX="859.0" layoutY="654.0" mnemonicParsing="false" onMouseClicked="#editFinishButton" text="编辑完成" />
+      <RadioButton fx:id="makeNotePublicButton" layoutX="38.0" layoutY="654.0" mnemonicParsing="false" onMouseClicked="#makeNotePublicButton" text="公开" textFill="#2b8626">
+         <toggleGroup>
+            <ToggleGroup fx:id="publicOrNot" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="makeNotePrivateButton" layoutX="149.0" layoutY="654.0" mnemonicParsing="false" onMouseClicked="#makeNotePrivateButton" text="私密" textFill="#29a829" toggleGroup="$publicOrNot" />
+      <TextField fx:id="titleText" layoutX="332.0" layoutY="654.0" prefHeight="32.0" prefWidth="243.0" promptText="请输入标题" />
+      <Label layoutX="297.0" layoutY="654.0" prefHeight="48.0" prefWidth="26.0" text="标题" />
+      <TextField fx:id="addGroupText" layoutX="707.0" layoutY="654.0" prefHeight="39.0" prefWidth="109.0" promptText="输入笔记组" />
+      <Label layoutX="652.0" layoutY="654.0" prefHeight="48.0" prefWidth="77.0" text="分组" />
+      <Button fx:id="showByText" layoutX="91.0" layoutY="362.0" mnemonicParsing="false" onMouseClicked="#showByText" prefHeight="40.0" prefWidth="137.0" text="文本" />
+      <Button fx:id="showByHtml" layoutX="674.0" layoutY="362.0" mnemonicParsing="false" onMouseClicked="#showByHtml" prefHeight="48.0" prefWidth="152.0" text="html" />
+      <TextArea fx:id="noteContent" layoutX="1.0" layoutY="411.0" prefHeight="228.0" prefWidth="1000.0" />
+   </children>
+</AnchorPane>

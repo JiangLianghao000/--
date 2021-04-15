@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="501.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jianglianghao.notes.view.showMSGViewController">
+   <children>
+      <Label layoutX="56.0" layoutY="74.0" prefHeight="50.0" prefWidth="102.0" text="用户ID：" textFill="#29bf38" />
+      <Label layoutX="56.0" layoutY="141.0" prefHeight="40.0" prefWidth="102.0" text="用户名：" textFill="#4ea844" />
+      <Label layoutX="56.0" layoutY="220.0" prefHeight="40.0" prefWidth="102.0" text="用户账号：" textFill="#409e35" />
+      <Label layoutX="56.0" layoutY="292.0" prefHeight="50.0" prefWidth="102.0" text="用户密码：" textFill="#51b248" />
+      <Label fx:id="userID" layoutX="139.0" layoutY="76.0" prefHeight="48.0" prefWidth="156.0" text="Label" />
+      <Label fx:id="userName" layoutX="139.0" layoutY="137.0" prefHeight="48.0" prefWidth="156.0" text="Label" />
+      <Label fx:id="userAccount" layoutX="139.0" layoutY="220.0" prefHeight="40.0" prefWidth="156.0" text="Label" />
+      <Button fx:id="modifyName" layoutX="371.0" layoutY="137.0" mnemonicParsing="false" onMouseClicked="#modifyName" prefHeight="40.0" prefWidth="106.0" text="修改昵称" />
+      <Button fx:id="modifyPassword" layoutX="371.0" layoutY="293.0" mnemonicParsing="false" onMouseClicked="#modifyPassword" prefHeight="48.0" prefWidth="106.0" text="修改密码" />
+      <Button fx:id="showPassword" layoutX="139.0" layoutY="293.0" mnemonicParsing="false" onMouseClicked="#showPassword" prefHeight="48.0" prefWidth="126.0" text="查看密码" />
+      <Label layoutX="-111.0" layoutY="20.0" prefHeight="33.0" prefWidth="313.0" text="               个人信息" textFill="#5f1bd3">
+         <font>
+            <Font size="36.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

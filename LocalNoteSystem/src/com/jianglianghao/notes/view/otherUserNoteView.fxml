@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jianglianghao.notes.view.otherUserNoteViewController">
+   <children>
+      <Label fx:id="name" layoutX="14.0" prefHeight="71.0" prefWidth="1168.0" text="Label" textFill="#7c2121">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Separator layoutY="59.0" prefHeight="3.0" prefWidth="1200.0" />
+      <ListView fx:id="allNote" layoutX="7.0" layoutY="214.0" prefHeight="471.0" prefWidth="175.0" />
+      <Label layoutX="15.0" layoutY="71.0" prefHeight="62.0" prefWidth="192.0" text="用户所有笔记" textFill="#83b238">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <HTMLEditor fx:id="noteContent" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="286.0" layoutY="61.0" prefHeight="572.0" prefWidth="914.0" />
+      <Button fx:id="showNote" layoutX="203.0" layoutY="202.0" mnemonicParsing="false" onMouseClicked="#showNote" prefHeight="136.0" prefWidth="59.0" text="查看" textFill="#438494" />
+      <Button fx:id="like" layoutX="203.0" layoutY="396.0" mnemonicParsing="false" onMouseClicked="#like" prefHeight="71.0" prefWidth="59.0" text="点赞" />
+      <RadioButton fx:id="publicDate" layoutX="15.0" layoutY="133.0" mnemonicParsing="false" onMouseClicked="#publicDate" prefHeight="24.0" prefWidth="159.0" text="发布日期">
+         <toggleGroup>
+            <ToggleGroup fx:id="sort" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="likeNumber" layoutX="14.0" layoutY="170.0" mnemonicParsing="false" onMouseClicked="#likeNumber" prefHeight="32.0" prefWidth="159.0" text="点赞数" toggleGroup="$sort" />
+      <Button fx:id="unlike" layoutX="203.0" layoutY="516.0" mnemonicParsing="false" onMouseClicked="#unlike" prefHeight="71.0" prefWidth="59.0" text="取消赞" />
+      <Label fx:id="likeNumbers" layoutX="990.0" layoutY="636.0" prefHeight="50.0" prefWidth="192.0" text="Label" textFill="#15806f">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

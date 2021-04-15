@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jianglianghao.notes.controller.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="629.0" prefWidth="1143.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jianglianghao.notes.view.mainController">
+   <children>
+      <Button fx:id="loginButton" layoutX="109.0" layoutY="344.0" mnemonicParsing="false" onMouseClicked="#loginButtonClicked" prefHeight="61.0" prefWidth="136.0" text="用户登陆" textFill="#2ea879" />
+      <Button fx:id="managerSignButton" layoutX="280.0" layoutY="344.0" mnemonicParsing="false" onMouseClicked="#managerSignButtonClicker" prefHeight="61.0" prefWidth="128.0" text="管理员注册" textFill="#46246f">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <PasswordField fx:id="password" layoutX="192.0" layoutY="245.0" prefHeight="48.0" prefWidth="367.0" promptText="请输入" />
+      <Label layoutX="109.0" layoutY="234.0" prefHeight="70.0" prefWidth="81.0" text="密码">
+         <font>
+            <Font size="27.0" />
+         </font></Label>
+      <TextField fx:id="account" layoutX="192.0" layoutY="164.0" prefHeight="48.0" prefWidth="367.0" promptText="请输入" />
+      <Label layoutX="109.0" layoutY="142.0" prefHeight="92.0" prefWidth="67.0" text="账号">
+         <font>
+            <Font size="28.0" />
+         </font></Label>
+      <Label layoutX="206.0" layoutY="98.0" text="欢迎登陆笔记本管理系统">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="userSignButton" layoutX="436.0" layoutY="344.0" mnemonicParsing="false" onMouseClicked="#userSignButtonClicked" prefHeight="61.0" prefWidth="165.0" text="用户注册" textFill="#513fab" />
+      <Button fx:id="adminLogin" layoutX="109.0" layoutY="435.0" mnemonicParsing="false" onMouseClicked="#adminLogin" prefHeight="48.0" prefWidth="228.0" text="管理员登陆" textFill="#971528" />
+      <Button fx:id="findPassword" layoutX="381.0" layoutY="435.0" mnemonicParsing="false" onMouseClicked="#findPassword" prefHeight="48.0" prefWidth="219.0" text="密码找回" textFill="#35476f" />
+   </children>
+</AnchorPane>

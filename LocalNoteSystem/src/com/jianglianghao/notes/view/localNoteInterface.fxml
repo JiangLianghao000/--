@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="773.0" prefWidth="1293.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jianglianghao.notes.view.LocalNoteInterfaceController">
+   <children>
+      <Line endX="1193.0" layoutX="101.0" layoutY="52.0" startX="-100.0" />
+      <Circle fill="#ba7123" layoutX="31.0" layoutY="31.0" radius="17.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="name" layoutX="63.0" layoutY="10.0" text="Label">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginOut" layoutX="1131.0" mnemonicParsing="false" onMouseClicked="#loginOut" prefHeight="48.0" prefWidth="164.0" text="退出登陆" textFill="#30bf43" />
+      <ImageView fitHeight="220.0" fitWidth="164.0" layoutX="1.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@jiayou.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="checkMSG" layoutX="149.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#checkMSG" prefHeight="48.0" prefWidth="140.0" text="查看信息" textFill="#591787" />
+      <Label layoutX="129.0" layoutY="52.0" prefHeight="48.0" prefWidth="140.0" text="    功能区" textFill="#bc2c2c">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Separator layoutX="129.0" layoutY="52.0" orientation="VERTICAL" prefHeight="721.0" prefWidth="28.0" />
+      <Button fx:id="showAnnouncement" layoutX="441.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#showAnnouncement" prefHeight="48.0" prefWidth="140.0" text="查看公告" textFill="#972d97" />
+      <Button fx:id="addNoteButton" layoutX="1112.0" layoutY="166.0" mnemonicParsing="false" onMouseClicked="#addNoteButton" prefHeight="48.0" prefWidth="140.0" text="添加笔记" />
+      <Button fx:id="addGroup" layoutX="900.0" layoutY="166.0" mnemonicParsing="false" onMouseClicked="#addGroup" prefHeight="48.0" prefWidth="122.0" text="添加分组" />
+      <Button layoutX="670.0" layoutY="166.0" mnemonicParsing="false" onMouseClicked="#addWarehouse" prefHeight="48.0" prefWidth="147.0" text="添加知识库" textFill="#b52121" />
+      <Button fx:id="showForum" layoutX="303.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#showForum" prefHeight="48.0" prefWidth="131.0" text="论坛" />
+      <Button fx:id="checkUserNote" layoutX="148.0" layoutY="111.0" mnemonicParsing="false" onMouseClicked="#checkUserNote" prefHeight="48.0" prefWidth="102.0" text="搜索用户笔记" />
+      <Separator layoutX="600.0" layoutY="52.0" orientation="VERTICAL" prefHeight="721.0" prefWidth="28.0" />
+      <ListView fx:id="noteWareHouse" layoutX="634.0" layoutY="332.0" onMouseClicked="#showGroup" prefHeight="400.0" prefWidth="193.0" />
+      <Label layoutX="687.0" layoutY="63.0" prefHeight="39.0" prefWidth="140.0" text="笔记库" textFill="#5cd02e">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Separator layoutX="820.0" layoutY="52.0" orientation="VERTICAL" prefHeight="721.0" prefWidth="28.0" />
+      <Separator layoutX="1040.0" layoutY="52.0" orientation="VERTICAL" prefHeight="721.0" prefWidth="28.0" />
+      <Label layoutX="900.0" layoutY="63.0" prefHeight="39.0" prefWidth="140.0" text="笔记分组" textFill="#363b94">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <ListView fx:id="noteGroup" layoutX="856.0" layoutY="332.0" onMouseClicked="#showNoteTitle" prefHeight="400.0" prefWidth="184.0" />
+      <Label layoutX="1120.0" layoutY="58.0" prefHeight="48.0" prefWidth="140.0" text="笔记标题" textFill="#596cbf">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <ListView fx:id="noteTitle" layoutX="1068.0" layoutY="332.0" onMouseClicked="#showNote" prefHeight="400.0" prefWidth="214.0" />
+      <Button layoutX="670.0" layoutY="106.0" mnemonicParsing="false" onMouseClicked="#selectHouse" prefHeight="39.0" prefWidth="147.0" text="查询仓库" textFill="#226152" />
+      <Button layoutX="900.0" layoutY="111.0" mnemonicParsing="false" onMouseClicked="#selectGroup" prefHeight="39.0" prefWidth="122.0" text="查询分组" textFill="#248d6c" />
+      <Button layoutX="1112.0" layoutY="111.0" mnemonicParsing="false" onMouseClicked="#selectNote" prefHeight="48.0" prefWidth="140.0" text="查询笔记" textFill="#7c7527" />
+      <Button layoutX="670.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#removeWarehouse" prefHeight="48.0" prefWidth="147.0" text="删除仓库" />
+      <Button fx:id="deleteGroup" layoutX="900.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#deleteGroup" prefHeight="48.0" prefWidth="122.0" text="删除分组" />
+      <Button fx:id="deleteNote" layoutX="1112.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#deleteNote" prefHeight="48.0" prefWidth="140.0" text="删除笔记" />
+      <Button fx:id="modifyWarehouseMSG" layoutX="670.0" layoutY="274.0" mnemonicParsing="false" onMouseClicked="#modifyWarehouseMSG" prefHeight="48.0" prefWidth="147.0" text="修改信息" />
+      <Button fx:id="modifyGroupMSG" layoutX="900.0" layoutY="274.0" mnemonicParsing="false" onMouseClicked="#modifyGroupMSG" prefHeight="48.0" prefWidth="122.0" text="修改信息" />
+      <Button fx:id="modifyUserNote" layoutX="1112.0" layoutY="274.0" mnemonicParsing="false" onMouseClicked="#modifyUserNote" prefHeight="48.0" prefWidth="140.0" text="修改笔记" />
+      <TextArea fx:id="adminAnnounce" layoutX="149.0" layoutY="278.0" prefHeight="453.0" prefWidth="457.0" />
+      <TextField fx:id="userAccount" layoutX="336.0" layoutY="166.0" prefHeight="48.0" prefWidth="259.0" promptText="输入用户账号" />
+      <TextField fx:id="checkName" layoutX="336.0" layoutY="111.0" prefHeight="48.0" prefWidth="259.0" promptText="输入用户名字" />
+      <RadioButton fx:id="checkByUserName" layoutX="255.0" layoutY="118.0" mnemonicParsing="false" onMouseClicked="#checkByUserName" prefHeight="34.0" prefWidth="70.0" text="名字">
+         <toggleGroup>
+            <ToggleGroup fx:id="checkBy" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="checkByAccount" layoutX="255.0" layoutY="174.0" mnemonicParsing="false" onMouseClicked="#checkByAccount" prefHeight="21.0" prefWidth="60.0" text="账号" toggleGroup="$checkBy" />
+   </children>
+</AnchorPane>
